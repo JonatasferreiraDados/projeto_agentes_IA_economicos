@@ -2,8 +2,8 @@ name: Daily run - economic agents
 
 on:
   # Executa diariamente às 09:00 UTC (06:00 no Brasil normalmente)
-  schedule:
-    - cron: "0 9 * * *"
+  #schedule:
+  #  - cron: "0 9 * * *"
   workflow_dispatch:
 
 jobs:
