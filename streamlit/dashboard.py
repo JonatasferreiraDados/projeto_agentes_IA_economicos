@@ -136,7 +136,7 @@ if pergunta_cliente and chat_model:
     mensagens.append(HumanMessage(content=pergunta_cliente))
 
     try:
-        resposta_obj = chat_model(mensagens)
+        resposta_obj = chat_model.invoke(mensagens)
         resposta = resposta_obj.content
         st.session_state.chat_history.append(
             {"pergunta": pergunta_cliente, "resposta": resposta}
